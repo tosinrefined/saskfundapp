@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link media="screen" rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+
+    <script>
+        function getURL()
+        {
+             dURL = 'api/client/' + document.getElementById('client_id').value
+             location.replace(dURL)
+        }
+    </script>
+
+    <div class="header">
+        <a href="#default" class="logo">SaskFund App</a>
+        <div class="header-right">
+            <a href="/">Home</a>
+            <a class="active">Clients</a>
+            <a href="eligibility.html">Eligibility</a>
+        </div>
+    </div>
+
+    <!-- content for about page -->
+    <div class="">
+        <div class="row">
+           <center><h2 >Search Client Information</h2></center> 
+            <div >
+               
+                
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name_id"> Client Information </label>
+                        </div>
+                        <div class="col-75">
+                        <input type="text" id="client_id" placeholder="Please type Client Name or ID"></input>
+                    </div>
+                 <div class="row">
+                     <div class="col-75">
+                        <input type="submit" value="Submit" onclick="getURL()">
+                    </div>
+                </div>
+       
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <p>&copy;SaskFund - 2020</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
